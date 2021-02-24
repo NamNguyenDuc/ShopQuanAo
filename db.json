@@ -1,0 +1,373 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "categoryId": "1",
+      "name": "Sơ Mi 2102 ",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201231/sm2102__2_.jpg",
+      "price": "849.00",
+      "status": false,
+      "quantity": 82644
+    },
+    {
+      "id": "2",
+      "categoryId": "1",
+      "name": "Sơ Mi M740",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201231/7400.jpg",
+      "price": "762.00",
+      "status": true,
+      "quantity": 57587
+    },
+    {
+      "id": "3",
+      "categoryId": "1",
+      "name": "Sơ Mi M1200A",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201217/1200aa.jpg",
+      "price": "633.00",
+      "status": false,
+      "quantity": 51117
+    },
+    {
+      "id": "4",
+      "categoryId": "1",
+      "name": "Sơ Mi M1200B ",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201217/smm1200b__1_.jpg",
+      "price": "728.00",
+      "status": false,
+      "quantity": 56
+    },
+    {
+      "id": "5",
+      "categoryId": "1",
+      "name": "Sơ Mi M6031",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201217/smm6031__5_.jpg",
+      "price": "364.00",
+      "status": true,
+      "quantity": 7373
+    },
+    {
+      "id": "6",
+      "categoryId": "1",
+      "name": "Sơ Mi 6516",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201217/so_mi_6516__2_.jpg",
+      "price": "654.00",
+      "status": true,
+      "quantity": 26
+    },
+    {
+      "id": "7",
+      "categoryId": "1",
+      "name": "Sơ Mi 6512",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201121/sm6512.jpg",
+      "price": "795.00",
+      "status": true,
+      "quantity": 61
+    },
+    {
+      "id": "8",
+      "categoryId": "1",
+      "name": "Sơ Mi 6515",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201121/sm651555.jpg",
+      "price": "513.00",
+      "status": false,
+      "quantity": 36
+    },
+    {
+      "id": "9",
+      "categoryId": "1",
+      "name": "Sơ Mi C101 ",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201121/smc10111.jpg",
+      "price": "741.00",
+      "status": false,
+      "quantity": 29
+    },
+    {
+      "id": "10",
+      "categoryId": "1",
+      "name": "Sơ Mi M278B",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201121/smm278b_5_.jpg",
+      "price": "471.00",
+      "status": true,
+      "quantity": 42
+    },
+    {
+      "id": "11",
+      "categoryId": "2",
+      "name": "Quần Jeans C016",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210120/qjc016_1_.jpg",
+      "price": "824.00",
+      "status": true,
+      "quantity": 86
+    },
+    {
+      "id": "12",
+      "categoryId": "2",
+      "name": "Quần Jeans RC2010",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210104/qjrc2010_5_.jpg",
+      "price": "611.00",
+      "status": false,
+      "quantity": 14
+    },
+    {
+      "id": "13",
+      "categoryId": "2",
+      "name": "Quần Jeans C013",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210104/qjc013_2_.jpg",
+      "price": "821.00",
+      "status": false,
+      "quantity": 64
+    },
+    {
+      "id": "14",
+      "categoryId": "2",
+      "name": "Quần Jeans C110",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210104/qjc110_3_.jpg",
+      "price": "894.00",
+      "status": true,
+      "quantity": 94
+    },
+    {
+      "id": "15",
+      "categoryId": "2",
+      "name": "Quần Jeans 3012",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210104/qj3012_7_.jpg",
+      "price": "156.00",
+      "status": false,
+      "quantity": 13
+    },
+    {
+      "id": "16",
+      "categoryId": "2",
+      "name": "Quần Jeans C109",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210104/qjc109_7_.jpg",
+      "price": "933.00",
+      "status": true,
+      "quantity": 64
+    },
+    {
+      "id": "17",
+      "categoryId": "2",
+      "name": "Quần Jeans C105",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210104/qjc105_3_.jpg",
+      "price": "694.00",
+      "status": false,
+      "quantity": 65
+    },
+    {
+      "id": "18",
+      "categoryId": "2",
+      "name": "Quần Jeans 8665",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210104/qj8665_2_.jpg",
+      "price": "797.00",
+      "status": false,
+      "quantity": 22
+    },
+    {
+      "id": "19",
+      "categoryId": "2",
+      "name": "Quần Jeans 3345",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20200905/qj3345_4_.jpg",
+      "price": "841.00",
+      "status": false,
+      "quantity": 98
+    },
+    {
+      "id": "20",
+      "categoryId": "2",
+      "name": "Quần Jeans 3334",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201104/qj3334_gn20121_.jpg",
+      "price": "828.00",
+      "status": false,
+      "quantity": 63
+    },
+    {
+      "id": "21",
+      "categoryId": "2",
+      "name": "Quần Jeans 9510",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201022/sm8813_qj9510__11_.jpg",
+      "price": "848.00",
+      "status": false,
+      "quantity": 67
+    },
+    {
+      "id": "22",
+      "categoryId": "3",
+      "name": "Giày Nam L9152",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210122/gnl9152__5_.jpg",
+      "price": "849.00",
+      "status": false,
+      "quantity": 82644
+    },
+    {
+      "id": "23",
+      "categoryId": "3",
+      "name": "Giày Nam 8958",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210122/gn8958__2_.jpg",
+      "price": "762.00",
+      "status": true,
+      "quantity": 57587
+    },
+    {
+      "id": "24",
+      "categoryId": "3",
+      "name": "Giày Nam 9135",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210122/gn9135__1_.jpg",
+      "price": "633.00",
+      "status": false,
+      "quantity": 51117
+    },
+    {
+      "id": "25",
+      "categoryId": "3",
+      "name": "Giày Nam 8076",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210122/gn8076__4_.jpg",
+      "price": "728.00",
+      "status": false,
+      "quantity": 56
+    },
+    {
+      "id": "26",
+      "categoryId": "3",
+      "name": "Giày Nam 1192",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210122/gn1192__6_.jpg",
+      "price": "364.00",
+      "status": true,
+      "quantity": 7373
+    },
+    {
+      "id": "27",
+      "categoryId": "3",
+      "name": "Giày Nam 68008",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210122/gn68008__3_.jpg",
+      "price": "654.00",
+      "status": true,
+      "quantity": 26
+    },
+    {
+      "id": "28",
+      "categoryId": "3",
+      "name": "Giày Nam YH8219",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210122/gnyh8219__3_.jpg",
+      "price": "795.00",
+      "status": true,
+      "quantity": 61
+    },
+    {
+      "id": "29",
+      "categoryId": "3",
+      "name": "Giày Nam 205826",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210122/gn205826__8_.jpg",
+      "price": "513.00",
+      "status": false,
+      "quantity": 36
+    },
+    {
+      "id": "30",
+      "categoryId": "3",
+      "name": "Giày Nam 97002",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210122/gn97002__7_.jpg",
+      "price": "741.00",
+      "status": false,
+      "quantity": 29
+    },
+    {
+      "id": "31",
+      "categoryId": "4",
+      "name": "Balo MK 6078",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201206/bl6078_7_.jpg",
+      "price": "849.00",
+      "status": false,
+      "quantity": 82644
+    },
+    {
+      "id": "32",
+      "categoryId": "4",
+      "name": "Túi Đeo Chéo L8896",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201207/tuil8896_1_.jpg",
+      "price": "762.00",
+      "status": true,
+      "quantity": 57587
+    },
+    {
+      "id": "33",
+      "categoryId": "4",
+      "name": "Balo Da L1573",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201206/bll1573_2_.jpg",
+      "price": "633.00",
+      "status": false,
+      "quantity": 51117
+    },
+    {
+      "id": "34",
+      "categoryId": "4",
+      "name": "Balo Da L1925",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201206/bll1925_4_.jpg",
+      "price": "728.00",
+      "status": false,
+      "quantity": 56
+    },
+    {
+      "id": "35",
+      "categoryId": "4",
+      "name": "Cặp Xách Da L302",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201206/capl302__4_.jpg",
+      "price": "364.00",
+      "status": true,
+      "quantity": 7373
+    },
+    {
+      "id": "36",
+      "categoryId": "4",
+      "name": "Túi Đeo Chéo L9887",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201210/bum03557.jpg",
+      "price": "654.00",
+      "status": true,
+      "quantity": 26
+    },
+    {
+      "id": "37",
+      "categoryId": "4",
+      "name": "Balo Da L9003",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201206/bll9003_8_.jpg",
+      "price": "795.00",
+      "status": true,
+      "quantity": 61
+    },
+    {
+      "id": "38",
+      "categoryId": "4",
+      "name": "Balo Da L1923",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201206/bll1923_3_.jpg",
+      "price": "513.00",
+      "status": false,
+      "quantity": 36
+    },
+    {
+      "id": "39",
+      "categoryId": "4",
+      "name": "Balo Da L1013",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201206/bll1013_5_.jpg",
+      "price": "741.00",
+      "status": false,
+      "quantity": 29
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "ÁO NAM"
+    },
+    {
+      "id": "2",
+      "name": "QUẦN NAM"
+    },
+    {
+      "id": "3",
+      "name": "GIÀY NAM"
+    },
+    {
+      "id": "4",
+      "name": "BALO TÚI XÁCH"
+    }
+  ]
+}
