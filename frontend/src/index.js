@@ -1,5 +1,4 @@
 import home from './pages/Home.js';
-import ProductAPI from './api/ProductApi.js';
 import Error404Page from './pages/Error404Page.js';
 import ProductsPage from './pages/ProductsPage.js';
 import ProductDetailPage from './pages/ProductDetailPage.js';
@@ -7,6 +6,7 @@ import { parseRequestUrl, $ } from './utils.js';
 import Header from './components/Header.js';
 import CategoryPage from './pages/CategoryPage.js';
 import ProductAddPage from './pages/ProductAddPage.js';
+import ProductEditPage from './pages/ProductEditPage.js';
 
 const routes = {
     '/': home,
@@ -14,7 +14,7 @@ const routes = {
     '/products': ProductsPage,
     '/category/:id': CategoryPage,
     '/addproduct': ProductAddPage,
-
+    '/editproduct/:id': ProductEditPage,
 }
 
 const router = async () => {

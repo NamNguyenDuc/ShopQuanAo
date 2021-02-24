@@ -16,8 +16,14 @@ const ProductApi = {
         return axiosClient.post(url, product);
     },
 
-    remove(id) {
+    update(id, product) {
+        const url = `/products/${id}`;
+        return axiosClient.put(url, product);
+    },
 
+    remove(id) {
+        const url = `/products/${id}`;
+        return axiosClient.delete(url);
     }
 }
 export default ProductApi;

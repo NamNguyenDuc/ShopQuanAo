@@ -30,13 +30,16 @@ const ProductsPage = {
                         return `
                             <tr>
                                 <td>${product.id}</td>
-                                <td>${product.name}</td>
+                                <td><a href="/#/products/${product.id}">${product.name}</a></td>
                                 <td>${product.price}</td>
                                 <td>${categories.map(item => {
                                     if(item.id == product.categoryId) return item.name;
                                 }).join(' ')}</td>
                                 <td>${product.quantity}</td>
-                                <td><a href="/#/product/${product.id}">Chi tiet</a></td>
+                                <td>
+                                    <a href="/#/editproduct/${product.id}">Edit</a>
+                                    <a href="/#/products/${product.id}">Delete</a>
+                                </td>
                             </tr>
                         `
                     }).join(' ')}
