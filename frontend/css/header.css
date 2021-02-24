@@ -18,11 +18,13 @@ body{
 .top-header{
     text-align: right;
     padding: 20px 215px;
+    color: #fff;
 }
 .top-header a{
     text-decoration: none;
-    color: #ffff;
+    color: #fff;
     font-size: 12px;
+    padding: 0 5px;
 }
 .top-header a:hover{
     color: red;

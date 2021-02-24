@@ -27,8 +27,12 @@ const ProductAddPage = {
                                 })}
                             </select>
                         </div>
+                        <div class="col-12 mb-3">
+                            <label for="quantity">Số lượng sản phẩm</label>
+                            <input type="number" placeholder="Nhập số lượng sản phẩm" id="product-quantity" class="form-control" />
+                        </div>
                         <div class="col-12">
-                            <input type="submit" class="btn btn-primary w-100" />
+                            <input type="submit" class="btn btn-primary w-100" value="Thêm sản phẩm mới" />
                         </div>
                     </div>
                 </div>
@@ -44,9 +48,11 @@ const ProductAddPage = {
                 id: listProducts.length + 1,
                 name: $('#product-name').value,
                 price: $('#product-price').value,
-                categoryId: $('#category').value
+                categoryId: $('#category').value,
+                quantity: Number($('#product-quantity').value)
             }
             ProductApi.add(product);
+            location.href = '#/products'
         })
     }
 }
