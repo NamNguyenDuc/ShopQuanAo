@@ -147,11 +147,11 @@
     {
       "id": "17",
       "categoryId": "2",
-      "name": "Quần Jeans C10570",
+      "name": "Quần Jeans C105",
       "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210104/qjc105_3_.jpg",
-      "price": "700.01",
+      "price": "694.00",
       "status": false,
-      "quantity": 70
+      "quantity": 65
     },
     {
       "id": "18",
@@ -253,15 +253,6 @@
       "quantity": 61
     },
     {
-      "id": "29",
-      "categoryId": "3",
-      "name": "Giày Nam 205826",
-      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20210122/gn205826__8_.jpg",
-      "price": "513.00",
-      "status": false,
-      "quantity": 36
-    },
-    {
       "id": "30",
       "categoryId": "3",
       "name": "Giày Nam 97002",
@@ -332,24 +323,6 @@
       "price": "795.00",
       "status": true,
       "quantity": 61
-    },
-    {
-      "id": "38",
-      "categoryId": "4",
-      "name": "Balo Da L1923",
-      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201206/bll1923_3_.jpg",
-      "price": "513.00",
-      "status": false,
-      "quantity": 36
-    },
-    {
-      "id": "39",
-      "categoryId": "4",
-      "name": "Balo Da L1013",
-      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201206/bll1013_5_.jpg",
-      "price": "741.00",
-      "status": false,
-      "quantity": 29
     }
   ],
   "categories": [
