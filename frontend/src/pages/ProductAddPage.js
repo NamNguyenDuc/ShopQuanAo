@@ -1,6 +1,7 @@
 import ProductApi from '../api/ProductApi.js';
 import CategoryAPI from '../api/categoryAPI';
 import { $ } from '../utils.js';
+import firebase from 'firebase';
 
 const ProductAddPage = {
     async render() {
@@ -31,6 +32,10 @@ const ProductAddPage = {
                             <label for="quantity">Số lượng sản phẩm</label>
                             <input type="number" placeholder="Nhập số lượng sản phẩm" id="product-quantity" class="form-control" />
                         </div>
+                        <div class="col-12 mb-3">
+                            <label for="file">Ảnh sản phẩm</label>
+                            <input type="file" placeholder="" id="product-image" class="form-control" />
+                        </div>
                         <div class="col-12">
                             <input type="submit" class="btn btn-primary w-100" value="Thêm sản phẩm mới" />
                         </div>
@@ -40,7 +45,7 @@ const ProductAddPage = {
         `
     },
 
-    afterRender() {
+    async afterRender() {
         $('#form-add').addEventListener('submit', async e => {
             e.preventDefault();
             const { data: listProducts } = await ProductApi.getAll();

@@ -1,6 +1,6 @@
 import ProductApi from '../api/ProductApi';
 import CategoryAPI from '../api/categoryAPI';
-import { $, reRender } from '../utils';
+import { $ } from '../utils';
 
 const ProductsPage = {
     async render() {
@@ -13,7 +13,7 @@ const ProductsPage = {
                     <h2>Danh sách sản phẩm</h2>
                 </div>
                 <div class="col-4 d-flex justify-content-center align-items-center">
-                    <a href="/#/addproduct">Thêm mới sản phẩm</a>
+                    <a href="/#/addproduct" class="btn btn-primary">Thêm mới sản phẩm</a>
                 </div>
             </div>
             <table class="table">
@@ -22,8 +22,8 @@ const ProductsPage = {
                         <th scope="col">STT</th>
                         <th scope="col">Tên sản phẩm</th>
                         <th scope="col">Giá sản phẩm</th>
-                        <th scope="col">Số lượng</th>
                         <th scope="col">Danh mục</th>
+                        <th scope="col">Số lượng</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
@@ -55,7 +55,6 @@ const ProductsPage = {
         const btns = $('#list-products .remove-product');
         btns.forEach(btn => {
             const id = btn.dataset.id;
-            console.log(id);
             btn.addEventListener('click', function() {
                 const question = confirm('Bạn có chắc chắn muốn xóa không?')
                 if(question) {
