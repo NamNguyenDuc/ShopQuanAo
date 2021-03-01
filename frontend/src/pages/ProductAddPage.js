@@ -2,6 +2,7 @@ import ProductApi from '../api/ProductApi.js';
 import CategoryAPI from '../api/categoryAPI';
 import { $ } from '../utils.js';
 import firebase from 'firebase';
+import { firebaseConfig } from '../firebbase/index.js';
 
 const ProductAddPage = {
     async render() {
@@ -22,10 +23,10 @@ const ProductAddPage = {
                             <label for="category">Chọn loại sản phẩm</label>
                             <select class="form-control" id="category">
                                 ${categories.map(item => {
-                                    return `
+            return `
                                         <option value="${item.id}">${item.name}</option>
                                     `
-                                })}
+        })}
                             </select>
                         </div>
                         <div class="col-12 mb-3">
@@ -48,16 +49,28 @@ const ProductAddPage = {
     async afterRender() {
         $('#form-add').addEventListener('submit', async e => {
             e.preventDefault();
-            const { data: listProducts } = await ProductApi.getAll();
-            const product = {
-                id: listProducts.length + 1,
-                name: $('#product-name').value,
-                price: $('#product-price').value,
-                categoryId: $('#category').value,
-                quantity: Number($('#product-quantity').value)
+            if (!firebase.apps.length) {
+                firebase.initializeApp(firebaseConfig);
             }
-            ProductApi.add(product);
-            location.href = '#/products'
+            const { data: listProducts } = await ProductApi.getAll();
+            const productImage = $('#product-image').files[0];
+            let storageRef = firebase.storage().ref(`images/${productImage.name}`);
+            storageRef.put(productImage).then(function () {
+                console.log('Upload thanh cong');
+                storageRef.getDownloadURL().then((url) => {
+                    const product = {
+                        id: listProducts.length + 1,
+                        name: $('#product-name').value,
+                        price: $('#product-price').value,
+                        categoryId: $('#category').value,
+                        quantity: Number($('#product-quantity').value),
+                        image: url
+                    }
+                    ProductApi.add(product);
+                    location.href = '#/products'
+                })
+            })
+            console.log(productImage);
         })
     }
 }
