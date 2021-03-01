@@ -7,6 +7,8 @@ import Header from './components/Header.js';
 import CategoryPage from './pages/CategoryPage.js';
 import ProductAddPage from './pages/ProductAddPage.js';
 import ProductEditPage from './pages/ProductEditPage.js';
+import ListCategory from './pages/ListCategory.js';
+import CategoryAddPage from './pages/CategoryAddPage.js';
 
 const routes = {
     '/': home,
@@ -15,6 +17,8 @@ const routes = {
     '/category/:id': CategoryPage,
     '/addproduct': ProductAddPage,
     '/editproduct/:id': ProductEditPage,
+    '/categories': ListCategory,
+    '/categories': CategoryAddPage
 }
 
 const router = async () => {
