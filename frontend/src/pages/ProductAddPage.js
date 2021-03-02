@@ -56,7 +56,6 @@ const ProductAddPage = {
             const productImage = $('#product-image').files[0];
             let storageRef = firebase.storage().ref(`images/${productImage.name}`);
             storageRef.put(productImage).then(function () {
-                console.log('Upload thanh cong');
                 storageRef.getDownloadURL().then((url) => {
                     const product = {
                         id: listProducts.length + 1,
