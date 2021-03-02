@@ -66,7 +66,7 @@ const ProductAddPage = {
                         image: url
                     }
                     ProductApi.add(product);
-                    location.href = '#/products'
+                    location.href = '#/products';
                 })
             })
             console.log(productImage);
