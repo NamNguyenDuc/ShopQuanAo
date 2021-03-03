@@ -25,10 +25,10 @@ const ProductAddPage = {
                             <label for="category">Chọn loại sản phẩm <b class="text-danger">*</b></label>
                             <select class="form-control" id="category">
                                 ${categories.map(item => {
-                                     return `
+            return `
                                         <option value="${item.id}">${item.name}</option>
                                     `
-                                })}
+        })}
                             </select>
                         </div>
                         <div class="col-12 mb-3">
@@ -53,7 +53,7 @@ const ProductAddPage = {
     async afterRender() {
         $('#form-add').addEventListener('submit', async e => {
             e.preventDefault();
-            if( this.validateItem('product-name', 'validate-name') && this.validateItem('product-price', 'validate-price') && this.validateItem('product-quantity', 'validate-quantity') && this.validateItem('product-image', 'validate-image')){
+            if (this.validateItem('product-name', 'validate-name') && this.validateItem('product-price', 'validate-price') && this.validateItem('product-quantity', 'validate-quantity') && this.validateItem('product-image', 'validate-image')) {
                 if (!firebase.apps.length) {
                     firebase.initializeApp(firebaseConfig);
                 }
@@ -72,16 +72,17 @@ const ProductAddPage = {
                         }
                         ProductApi.add(product);
                         location.href = '#/products'
+                        alert('Thêm mới sản phẩm thành công!');
                         location.reload();
                     })
                 })
             }
-            
+
         })
     },
 
     validateItem(id, idText) {
-        if(!document.getElementById(id).value) {
+        if (!document.getElementById(id).value) {
             document.getElementById(idText).style.display = 'block';
             document.getElementById(id).style.borderColor = 'red';
             return false;
