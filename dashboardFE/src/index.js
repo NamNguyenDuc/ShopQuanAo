@@ -8,6 +8,7 @@ import ListCategory from './pages/ListCategory.js';
 import CategoryAddPage from './pages/CategoryAddPage.js';
 import CategoryUpdate from './pages/CategoryUpdate.js';
 import Login from './pages/Login.js';
+import ListContact from './pages/listContact.js';
 
 const routes = {
     '/': ListCategory,
@@ -18,6 +19,7 @@ const routes = {
     '/addcategory': CategoryAddPage,
     '/updatecategory/:id': CategoryUpdate,
     '/login': Login,
+    '/contacts' : ListContact
 }
 
 const router = async () => {

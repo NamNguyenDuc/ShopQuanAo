@@ -28,6 +28,10 @@ const CategoryPage = {
              </div>
         `
 
+    },
+    
+    async afterRender() {
+        
     }
 }
 export default CategoryPage;

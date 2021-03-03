@@ -57,5 +57,9 @@ class Home {
             `;
         }).join(' ');
     }
+
+    async afterRender() {
+        
+    }
 };
 export default Home;

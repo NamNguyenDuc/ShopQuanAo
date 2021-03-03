@@ -53,6 +53,10 @@ const ProductDetailPage = {
         
 
         `
+  },
+  
+  async afterRender() {
+    
   }
 }
 

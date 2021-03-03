@@ -378,6 +378,36 @@
       "name": "BALO TÚI XÁCH"
     }
   ],
+  "contacts": [
+    {
+      "id": "1",
+      "name": "Nam",
+      "email": "abc@gmail.com",
+      "phone": "11111111",
+      "note": "abvcccc"
+    },
+    {
+      "id": 2,
+      "name": "nam",
+      "email": "",
+      "phone": "",
+      "note": ""
+    },
+    {
+      "id": 3,
+      "name": "duyeee",
+      "email": "",
+      "phone": "",
+      "note": ""
+    },
+    {
+      "id": 4,
+      "name": "vieieadads",
+      "email": "",
+      "phone": "",
+      "note": ""
+    }
+  ],
   "users": [
     {
       "id": "1",
