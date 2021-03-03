@@ -25,11 +25,11 @@ class Home {
                             ${products.filter(product => product.categoryId == category.id).slice(0, 4).map(product => {
                                 return ` 
                                     <div class="sp">
-                                        <a href="#" id="tt">
+                                        <a href="#/products/${product.id}" id="tt">
                                             <img src="${product.image}" class="img-fluid" width="176px" height="203px" alt="">
                                         </a>
                                         <div class="gia">
-                                            <a href="#" id="tt">${product.name}</a>
+                                            <a href="#/products/${product.id}" id="tt">${product.name}</a>
                                             <b>
                                                 <p>${product.price} <b>$</b></p>
                                             </b>
