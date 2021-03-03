@@ -72,7 +72,7 @@ const ProductAddPage = {
                         }
                         ProductApi.add(product);
                         location.href = '#/products'
-                        alert('Thêm mới sản phẩm thành công');
+                        alert('Thêm mới sản phẩm thành công!');
                         location.reload();
                     })
                 })
