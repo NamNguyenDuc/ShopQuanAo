@@ -14,7 +14,7 @@ class Home {
                                 <h3 class="mt-4">${category.name}</h3>
                             </div>
                             <div class="danhmuc">
-                                <a href="/#/category/${category.id}">Tất Cả <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                <a href="/#/category/${category.id}">Tất Cả <i class="fa fa-angle-double-right" aria-hidden="true"></i> <i class="fa fa-angle-double-right" aria-hidden="true"></i> </a>
                             </div>
                             <div class="icon">
                                 <a href=""><img src="https://i.ibb.co/KmJkpP1/Untitled-1.png" alt=""></a>
@@ -23,20 +23,20 @@ class Home {
                         <hr size="2px" color="#eaeaea" width="780px" align="left">
                         <div class="loaisp">
                             ${products.filter(product => product.categoryId == category.id).slice(0, 4).map(product => {
-                                return ` 
+                return ` 
                                     <div class="sp">
-                                        <a href="#" id="tt">
+                                        <a href="/#/products/${product.id}" id="tt">
                                             <img src="${product.image}" class="img-fluid" width="176px" height="203px" alt="">
                                         </a>
                                         <div class="gia">
-                                            <a href="#" id="tt">${product.name}</a>
+                                            <a href="/#/products/${product.id}" id="tt">${product.name}</a>
                                             <b>
                                                 <p>${product.price} <b>$</b></p>
                                             </b>
                                         </div>
                                     </div>
                                 `
-                            }).join(' ')}
+            }).join(' ')}
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@ class Home {
                             <img src="https://i.ibb.co/HnsX6s5/anh-so-2.jpg" alt="">
                         </div>
                     </div>                            
-                ` : category.id == 2 ?`
+                ` : category.id == 2 ? `
                     <div class="taokhoangcach">
                         <div class="banner3">
                             <img src="https://i.ibb.co/DM7X4LW/banner3.jpg" alt="">

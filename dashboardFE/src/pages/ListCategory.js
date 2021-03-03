@@ -27,7 +27,7 @@ const ListCategory = {
                             return `
                                 <tr>
                                     <td>${category.id}</td>
-                                    <td><a href="#">${category.name}</a></td>
+                                    <td><p>${category.name}</p></td>
                                     <td>
                                         <a href="/#/updatecategory/${category.id}" class="btn btn-primary">Update</a>
                                         <button class="btn btn-danger btn-remove remove-product" data-id="${category.id}">Remove</button>

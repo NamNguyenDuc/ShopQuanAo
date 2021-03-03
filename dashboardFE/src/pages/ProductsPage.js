@@ -15,12 +15,13 @@ const ProductsPage = {
                     <a href="/#/addproduct" class="btn btn-primary">Thêm mới sản phẩm</a>
                 </div>
             </div>
-            <table class="table">
+            <table class="table table-striped table-hover">
                 <thead>
                     <tr>
                         <th scope="col">STT</th>
                         <th scope="col">Tên sản phẩm</th>
                         <th scope="col">Giá sản phẩm</th>
+                        <th scope="col">Ảnh sản phẩm</th>
                         <th scope="col">Danh mục</th>
                         <th scope="col">Số lượng</th>
                         <th scope="col">Action</th>
@@ -28,14 +29,15 @@ const ProductsPage = {
                 </thead>
                 <tbody>
                     ${products.map(product => {
-                        return `
+            return `
                             <tr>
                                 <td>${product.id}</td>
-                                <td><a href="/#/products/${product.id}">${product.name}</a></td>
+                                <td><p>${product.name}</p></td>
                                 <td>${product.price}</td>
+                                <td><img src="${product.image}" style="width:70px; height: 70px; "  alt=""></td>  
                                 <td>${categories.map(item => {
-                                    if(item.id == product.categoryId) return item.name;
-                                }).join(' ')}</td>
+                if (item.id == product.categoryId) return item.name;
+            }).join(' ')}</td>
                                 <td>${product.quantity}</td>
                                 <td>
                                     <a href="/#/editproduct/${product.id}" class="btn btn-primary">Update</a>
@@ -43,20 +45,20 @@ const ProductsPage = {
                                 </td>
                             </tr>
                         `
-                    }).join(' ')}
+        }).join(' ')}
                 </tbody>
             </table>
         </div>
         `
-    }, 
+    },
 
     async afterRender() {
         const btns = $('#list-products .remove-product');
         btns.forEach(btn => {
             const id = btn.dataset.id;
-            btn.addEventListener('click', function() {
+            btn.addEventListener('click', function () {
                 const question = confirm('Bạn có chắc chắn muốn xóa không?')
-                if(question) {
+                if (question) {
                     ProductApi.remove(id);
                     location.reload();
                 }

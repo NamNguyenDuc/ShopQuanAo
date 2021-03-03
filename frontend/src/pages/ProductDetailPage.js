@@ -13,7 +13,7 @@ const ProductDetailPage = {
         </div>
         <div class="thongtin">
           <h1>${product.name}</h1>
-          <p> Tình Trạng : <b style="color:red;"> ${product.status == true ? 'Còn hàng ' : 'Hết hàng'}</b>   </p>
+
           <hr size="1px" color="#eaeaea" width="249px" align="left">
           <b>
             <p>Giá : <b style="color:red;"> ${product.price} $</b></p>
