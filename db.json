@@ -5,7 +5,7 @@
       "categoryId": "1",
       "name": "Sơ Mi 2102 ",
       "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201231/sm2102__2_.jpg",
-      "price": "849.00",
+      "price": "849",
       "status": false,
       "quantity": 82644
     },
@@ -353,11 +353,11 @@
     },
     {
       "id": 40,
-      "name": "1111",
-      "price": "111",
+      "name": "aaaaaaa",
+      "price": "11111",
       "categoryId": "1",
-      "quantity": 111,
-      "image": "https://firebasestorage.googleapis.com/v0/b/shop-135a8.appspot.com/o/images%2Fz2351980462389_d215552a31715d7f4b39bc6ccfc1685c.jpg?alt=media&token=b7d325aa-2ff2-41e9-aed7-9313f359f7d4"
+      "quantity": 11,
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-135a8.appspot.com/o/images%2Fz2351980465536_c027ac9a0ee905390d5db0a3ee0e0052.jpg?alt=media&token=7d915757-9ed4-42d3-9423-3bad79c23f29"
     }
   ],
   "categories": [
@@ -380,32 +380,11 @@
   ],
   "contacts": [
     {
-      "id": "1",
-      "name": "Nam",
-      "email": "abc@gmail.com",
-      "phone": "11111111",
-      "note": "abvcccc"
-    },
-    {
       "id": 2,
-      "name": "nam",
-      "email": "",
-      "phone": "",
-      "note": ""
-    },
-    {
-      "id": 3,
-      "name": "duyeee",
-      "email": "",
-      "phone": "",
-      "note": ""
-    },
-    {
-      "id": 4,
-      "name": "vieieadads",
-      "email": "",
-      "phone": "",
-      "note": ""
+      "name": "vietanhh",
+      "email": "abc@gmail.com",
+      "phone": "085060666",
+      "note": "Kết bạn với tao"
     }
   ],
   "users": [
