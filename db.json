@@ -377,5 +377,27 @@
       "id": "4",
       "name": "BALO TÚI XÁCH"
     }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "123456"
+    },
+    {
+      "id": "2",
+      "username": "admin",
+      "password": "123456"
+    },
+    {
+      "id": "3",
+      "username": "admin",
+      "password": "123456"
+    },
+    {
+      "id": "4",
+      "username": "admin",
+      "password": "123456"
+    }
   ]
 }

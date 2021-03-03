@@ -7,6 +7,7 @@ import ProductEditPage from './pages/ProductEditPage.js';
 import ListCategory from './pages/ListCategory.js';
 import CategoryAddPage from './pages/CategoryAddPage.js';
 import CategoryUpdate from './pages/CategoryUpdate.js';
+import Login from './pages/Login.js';
 
 const routes = {
     '/': ListCategory,
@@ -16,6 +17,7 @@ const routes = {
     '/editproduct/:id': ProductEditPage,
     '/addcategory': CategoryAddPage,
     '/updatecategory/:id': CategoryUpdate,
+    '/login': Login,
 }
 
 const router = async () => {
@@ -29,8 +31,13 @@ const router = async () => {
     } else if (parseUrl == '/products') {
         document.getElementById("title").innerHTML = 'Quản lý sản phẩm';
     }
-    $('#main-content').innerHTML = await screen.render();
-    await screen.afterRender();
+    if(parseUrl == '/login') {
+        $('#body-content').innerHTML = await screen.render();
+        await screen.afterRender();
+    } else {
+        $('#main-content').innerHTML = await screen.render();
+        await screen.afterRender();
+    }
 }
 window.addEventListener('DOMContentLoaded', router);
 window.addEventListener('hashchange', router)
