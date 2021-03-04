@@ -57,9 +57,9 @@ const NewAddPage = {
         } );
         $('#form-new').addEventListener('submit', async e => {
             e.preventDefault();
-            if (validateItem('new-title', 'validate-title') && 
-                validateItem('new-content', 'validate-content') && 
-                validateItem('new-image', 'validate-image') && 
+            if (validateItem('new-title', 'validate-title') &&
+                validateItem('new-content', 'validate-content') &&
+                validateItem('new-image', 'validate-image') &&
                 validateItem('new-name', 'validate-name')
             ) {
                 if (!firebase.apps.length) {
@@ -83,12 +83,12 @@ const NewAddPage = {
                         NewAPI.add(neww);
                         location.href = '#/news';
                         location.reload();
-                        alert('Gửi liên hệ thành công ');
+                        alert('Thêm tin tức thành công ');
                     })
                 })
             }
         });
     },
-    
+
 }
 export default NewAddPage;

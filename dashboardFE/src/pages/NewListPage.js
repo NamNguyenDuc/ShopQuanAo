@@ -47,6 +47,12 @@ const ListNew = {
         `
     },
     async afterRender() {
+        // const str = $('#detail');
+        // const res = str.replace(str.substring(200), "...");
+        // $('#detail').innerHTML = res;
+
+
+        // console.log(str);
         const btns = $('#list-news .remove-news');
         // console.log(btns);
         btns.forEach(btn => {
