@@ -32,7 +32,7 @@ const ListNew = {
                                     <td>${listnew.id}</td>
                                     <td><p>${listnew.title}</p></td>
                                     <td><img src="${listnew.image}" style="width:70px; height: 70px; "  alt=""></td>
-                                    <td><p>${listnew.content}</p></td>
+                                    <td><p id="detail">${listnew.content}</p></td>
                                     <td><p>${listnew.name}</p></td>
                                     <td>
                                         <a href="" class="btn btn-primary">Update</a>
@@ -47,6 +47,12 @@ const ListNew = {
         `
     },
     async afterRender() {
+        // const str = $('#detail');
+        // const res = str.replace(str.substring(200), "...");
+        // $('#detail').innerHTML = res;
+
+
+        // console.log(str);
         const btns = $('#list-news .remove-news');
         // console.log(btns);
         btns.forEach(btn => {

@@ -43,27 +43,35 @@ const NewAddPage = {
     async afterRender() {
         $('#form-new').addEventListener('submit', async e => {
             e.preventDefault();
-            if (validateItem('new-title', 'validate-title') && 
-                validateItem('new-content', 'validate-content') && 
-                validateItem('new-image', 'validate-image') && 
+            if (validateItem('new-title', 'validate-title') &&
+                validateItem('new-content', 'validate-content') &&
+                validateItem('new-image', 'validate-image') &&
                 validateItem('new-name', 'validate-name')
             ) {
+                if (!firebase.apps.length) {
+                    firebase.initializeApp(firebaseConfig);
+                }
                 const { data: listNew } = await NewAPI.getAll();
-                const neww = {
-                    id: listNew.length + 1,
-                    title: $('#new-title').value,
-                    content: $('#new-content').value,
-                    image: $('#new-image').value,
-                    name: $('#new-name').value,
-                };
-                // console.log(neww);
-                NewAPI.add(neww);
-                location.href = '#/news';
-                location.reload();
-                alert('Gửi liên hệ thành công ');
+                const newImage = $('#new-image').files[0];
+                let storageRef = firebase.storage().ref(`images/${newImage.name}`);
+                storageRef.put(newImage).then(function () {
+                    storageRef.getDownloadURL().then((url) => {
+                        const neww = {
+                            id: listNew.length + 1,
+                            title: $('#new-title').value,
+                            content: $('#new-content').value,
+                            image: url,
+                            name: $('#new-name').value,
+                        };
+                        NewAPI.add(neww);
+                        location.href = '#/news';
+                        location.reload();
+                        alert('Thêm tin tức thành công ');
+                    })
+                })
             }
         });
     },
-    
+
 }
 export default NewAddPage;

@@ -4,7 +4,7 @@ import { $ } from '../utils.js';
 const Contact = {
     async render() {
         return /*html*/`
-            <h1 style= "text-align: center; color: red;"> Liên Hệ </h1>
+            <h1 style="color: #2F4F4F; text-align: center; font-weight: bold;"> Liên Hệ </h1>
             <form id="form-contact">
                 <div class="col-12 mb-3">
                     <label for="name">Họ và tên <b class="text-danger">*</b></label>

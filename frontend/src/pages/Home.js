@@ -31,7 +31,7 @@ class Home {
                                         <div class="gia">
                                             <a href="#/products/${product.id}" id="tt">${product.name}</a>
                                             <b>
-                                                <p>${product.price} <b>$</b></p>
+                                                <p>&emsp; ${product.price} <b>$</b></p>
                                             </b>
                                         </div>
                                     </div>
@@ -59,7 +59,7 @@ class Home {
     }
 
     async afterRender() {
-        
+
     }
 };
 export default Home;
