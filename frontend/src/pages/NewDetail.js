@@ -1,5 +1,5 @@
 import NewAPI from "../api/newAPI";
-import { $, parseRequestUrl } from "../utils";
+import { parseRequestUrl } from "../utils";
 
 const NewDetail = { 
     async render() {
@@ -7,15 +7,16 @@ const NewDetail = {
         const { data: detail } = await NewAPI.get(id);
 
         return `
-            <div>
+            <div style="max-width: 61%; background: #fff; padding: 5px">
                 <h2>${detail.title}</h2>
-                <div id="detail">${detail.content}</div>
+                <div>${detail.description}</div>
+                <div>${detail.content}</div>
             </div>
         `
     },
 
     async afterRender() {
-        
+
     }
 }
 

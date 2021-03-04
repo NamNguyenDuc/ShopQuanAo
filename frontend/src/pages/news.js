@@ -10,7 +10,7 @@ const News = {
                 return `
                     <div class="border border-success mb-3">
                         <div><a href="#/newdetail/${item.id}">${item.title}</a></div>
-                        <div>${item.content}</div>
+                        <div>${item.description}</div>
                         <div>${item.name}</div>
                     </div>
                 `
