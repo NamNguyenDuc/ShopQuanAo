@@ -5,12 +5,16 @@ import { parseRequestUrl, $ } from './utils.js';
 import Header from './components/Header.js';
 import CategoryPage from './pages/CategoryPage.js';
 import Contact from './pages/Contact.js';
+import News from './pages/news.js';
+import NewDetail from './pages/NewDetail.js';
 
 const routes = {
     '/': home,
     '/products/:id': ProductDetailPage,
     '/category/:id': CategoryPage,
     '/contact': Contact,
+    '/news': News,
+    '/newdetail/:id': NewDetail
 }
 
 const router = async () => {

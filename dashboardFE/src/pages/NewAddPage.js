@@ -1,5 +1,5 @@
 import NewAPI from '../api/NewAPI.js';
-import { $ } from '../utils.js';
+import { $, validateItem } from '../utils.js';
 import firebase from 'firebase';
 import { firebaseConfig } from '../firebbase/index.js';
 
@@ -43,33 +43,27 @@ const NewAddPage = {
     async afterRender() {
         $('#form-new').addEventListener('submit', async e => {
             e.preventDefault();
-            // if (this.validateItem('new-title', 'validate-title') && this.validateItem('new-content', 'validate-content') && this.validateItem('new-image', 'validate-image') && this.validateItem('validate-name', 'new-name')) {
-            console.log(123);
-            const { data: listNew } = await NewAPI.getAll();
-            const neww = {
-                id: listNew.length + 1,
-                title: $('#new-title').value,
-                content: $('#new-content').value,
-                name: $('#new-image').value,
-            };
-            // console.log(neww);
-            NewAPI.add(neww);
-            location.href = '#/news';
-            location.reload();
-            alert('Gửi liên hệ thành công ');
-            // }
-
+            if (validateItem('new-title', 'validate-title') && 
+                validateItem('new-content', 'validate-content') && 
+                validateItem('new-image', 'validate-image') && 
+                validateItem('new-name', 'validate-name')
+            ) {
+                const { data: listNew } = await NewAPI.getAll();
+                const neww = {
+                    id: listNew.length + 1,
+                    title: $('#new-title').value,
+                    content: $('#new-content').value,
+                    image: $('#new-image').value,
+                    name: $('#new-name').value,
+                };
+                // console.log(neww);
+                NewAPI.add(neww);
+                location.href = '#/news';
+                location.reload();
+                alert('Gửi liên hệ thành công ');
+            }
         });
     },
-    validateItem(id, idText) {
-        if (!document.getElementById(id).value) {
-            document.getElementById(idText).style.display = 'block';
-            document.getElementById(id).style.borderColor = 'red';
-            return false;
-        }
-        document.getElementById(idText).style.display = 'none';
-        document.getElementById(id).style.borderColor = '';
-        return true;
-    }
+    
 }
 export default NewAddPage;
