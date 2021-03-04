@@ -21,7 +21,7 @@ const routes = {
     '/login': Login,
     '/contacts': ListContact,
     '/news': ListNewPage,
-    '/addnews': NewAddPage
+    '/addnews': NewAddPage,
 }
 
 const router = async () => {

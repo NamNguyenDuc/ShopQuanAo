@@ -20,7 +20,7 @@ const ListNew = {
                             <th scope="col">STT</th>
                             <th scope="col">Tiêu đề</th>
                             <th scope="col">Ảnh</th>
-                            <th scope="col">Nội dung</th>
+                            <th scope="col">Mô tả</th>
                             <th scope="col">Người viết</th>
                             <th scope="col">Action</th>
                         </tr>
@@ -32,7 +32,7 @@ const ListNew = {
                                     <td>${listnew.id}</td>
                                     <td><p>${listnew.title}</p></td>
                                     <td><img src="${listnew.image}" style="width:70px; height: 70px; "  alt=""></td>
-                                    <td><p>${listnew.content}</p></td>
+                                    <td><p>${listnew.description}</p></td>
                                     <td><p>${listnew.name}</p></td>
                                     <td>
                                         <a href="" class="btn btn-primary">Update</a>
