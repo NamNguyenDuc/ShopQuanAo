@@ -6,6 +6,7 @@ const ListContact = {
         const { data: listContact } = await ContactApi.getAll();
 
         return `
+        <h1 style= "text-align: center; color: red;"> Danh Sách Liên Hệ </h1>
             <div id="list-contacts">
                 <table class="table table-striped table-hover">
                     <thead>

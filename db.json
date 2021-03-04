@@ -387,6 +387,15 @@
       "note": "Kết bạn với tao"
     }
   ],
+  "news": [
+    {
+      "id": 1,
+      "name": "admin",
+      "title": "ABC title",
+      "image": "https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20201207/tuil8896_1_.jpg",
+      "content": "Abc content"
+    }
+  ],
   "users": [
     {
       "id": "1",

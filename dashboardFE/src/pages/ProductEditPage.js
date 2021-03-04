@@ -7,9 +7,10 @@ import { firebaseConfig } from '../firebbase/index.js';
 const ProductEditPage = {
     async render() {
         const { id } = parseRequestUrl();
-        const { data: product} = await ProductApi.get(id);
+        const { data: product } = await ProductApi.get(id);
         const { data: categories } = await CategoryAPI.getAll();
         return /*html*/`
+        <h1 style= "text-align: center; color: red;"> Sửa Sản Phẩm </h1>
             <form id="form-update">
                 <div class="form-group">
                     <div class="row">
@@ -27,10 +28,10 @@ const ProductEditPage = {
                             <label for="category">Chọn loại sản phẩm <b class="text-danger">*</b></label>
                             <select class="form-control" id="category">
                             ${categories.map(item => {
-                                return `
+            return `
                                     <option value="${item.id}" ${product.categoryId == item.id ? "selected" : ''}>${item.name}</option>
                                 `
-                            })}
+        })}
                             </select>
                         </div>
                         <div class="col-12 mb-3">
@@ -46,13 +47,13 @@ const ProductEditPage = {
             </form>
         `
     },
-    
+
     async afterRender() {
         const { id } = parseRequestUrl();
-        const { data: product} = await ProductApi.get(id);
+        const { data: product } = await ProductApi.get(id);
         $('#form-update').addEventListener('submit', async e => {
             e.preventDefault();
-            if( this.validateItem('product-name', 'validate-name') && this.validateItem('product-price', 'validate-price') && this.validateItem('product-quantity', 'validate-quantity')){
+            if (this.validateItem('product-name', 'validate-name') && this.validateItem('product-price', 'validate-price') && this.validateItem('product-quantity', 'validate-quantity')) {
                 const newProduct = {
                     ...product,
                     name: $('#product-name').value,
@@ -68,7 +69,7 @@ const ProductEditPage = {
     },
 
     validateItem(id, idText) {
-        if(!document.getElementById(id).value) {
+        if (!document.getElementById(id).value) {
             document.getElementById(idText).style.display = 'block';
             document.getElementById(id).style.borderColor = 'red';
             return false;

@@ -4,6 +4,7 @@ import { $ } from '../utils.js';
 const CategoryAddPage = {
     async render() {
         return /*html*/`
+        <h1 style= "text-align: center; color: red;"> Thêm Danh Mục </h1>
             <form id="form-add">
                 <div class="form-group">
                     <div class="row">
@@ -24,7 +25,7 @@ const CategoryAddPage = {
     async afterRender() {
         $('#form-add').addEventListener('submit', async e => {
             e.preventDefault();
-            if(!$('#category-name').value) {
+            if (!$('#category-name').value) {
                 $('#validate-name').innerHTML = 'Tên danh mục không được để trống';
                 $('#validate-name').style.color = 'red';
                 $('#category-name').style.borderColor = 'red';

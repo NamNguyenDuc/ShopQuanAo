@@ -8,6 +8,7 @@ const ProductAddPage = {
     async render() {
         const { data: categories } = await CategoryAPI.getAll();
         return /*html*/`
+        <h1 style= "text-align: center; color: red;"> Thêm Sản Phẩm </h1>
             <form id="form-add">
                 <div class="form-group">
                     <div class="row">
