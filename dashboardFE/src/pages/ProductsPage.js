@@ -6,7 +6,8 @@ const ProductsPage = {
     async render() {
         const { data: products } = await ProductApi.getAll();
         const { data: categories } = await CategoryAPI.getAll();
-        return `
+        return /*html*/`
+        <h1 style= "text-align: center; color: red;"> Danh Sách Sản Phẩm </h1>
         <div id="list-products">
             <div class="row">
                 <div class="col-10">

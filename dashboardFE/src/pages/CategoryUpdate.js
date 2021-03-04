@@ -4,8 +4,9 @@ import { parseRequestUrl, $ } from '../utils';
 const CategoryUpdate = {
     async render() {
         const { id } = parseRequestUrl();
-        const { data: category} = await CategoryAPI.get(id);
+        const { data: category } = await CategoryAPI.get(id);
         return /*html*/`
+        <h1 style= "text-align: center; color: red;"> Sửa Danh Mục </h1>
             <form id="form-update">
                 <div class="form-group">
                     <div class="row">
@@ -22,11 +23,11 @@ const CategoryUpdate = {
             </form>
         `
     },
-    
+
     async afterRender() {
         $('#form-update').addEventListener('submit', async e => {
             e.preventDefault();
-            if(!$('#category-name').value) {
+            if (!$('#category-name').value) {
                 $('#validate-name').innerHTML = 'Tên danh mục không được để trống';
                 $('#validate-name').style.color = 'red';
                 $('#category-name').style.borderColor = 'red';
@@ -36,7 +37,7 @@ const CategoryUpdate = {
             $('#validate-name').style.color = '';
             $('#category-name').style.borderColor = '';
             const { id } = parseRequestUrl();
-            const { data: category} = await CategoryAPI.get(id);
+            const { data: category } = await CategoryAPI.get(id);
             const newCategory = {
                 ...category,
                 name: $('#category-name').value,

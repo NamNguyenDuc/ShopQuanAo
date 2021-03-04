@@ -8,6 +8,7 @@ const ProductAddPage = {
     async render() {
         const { data: categories } = await CategoryAPI.getAll();
         return /*html*/`
+        <h1 style= "text-align: center; color: red;"> Thêm Sản Phẩm </h1>
             <form id="form-add">
                 <div class="form-group">
                     <div class="row">
@@ -72,7 +73,7 @@ const ProductAddPage = {
                         }
                         ProductApi.add(product);
                         location.href = '#/products'
-                        alert('Thêm mới sản phẩm thành công!!!!');
+                        alert('Thêm mới sản phẩm thành công');
                         location.reload();
                     })
                 })

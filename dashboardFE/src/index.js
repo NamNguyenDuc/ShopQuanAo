@@ -9,6 +9,8 @@ import CategoryAddPage from './pages/CategoryAddPage.js';
 import CategoryUpdate from './pages/CategoryUpdate.js';
 import Login from './pages/Login.js';
 import ListContact from './pages/listContact.js';
+import ListNewPage from './pages/NewListPage.js';
+import NewAddPage from './pages/NewAddPage.js';
 
 const routes = {
     '/': ListCategory,
@@ -19,7 +21,9 @@ const routes = {
     '/addcategory': CategoryAddPage,
     '/updatecategory/:id': CategoryUpdate,
     '/login': Login,
-    '/contacts' : ListContact
+    '/contacts': ListContact,
+    '/news': ListNewPage,
+    '/addnews': NewAddPage
 }
 
 const router = async () => {
@@ -28,12 +32,17 @@ const router = async () => {
     const parseUrl = (request.resource ? `/${request.resource}` : '/') +
         (request.id ? '/:id' : '');
     const screen = routes[parseUrl] ? routes[parseUrl] : Error404Page;
-    if(parseUrl == '/' || parseUrl == '/updatecategory') {
+    if (parseUrl == '/' || parseUrl == '/updatecategory') {
         document.getElementById("title").innerHTML = 'Quản lý danh mục';
     } else if (parseUrl == '/products') {
         document.getElementById("title").innerHTML = 'Quản lý sản phẩm';
+    } else if (parseUrl == '/contacts') {
+        document.getElementById("title").innerHTML = 'Quản lý liên hệ';
+    } else if (parseUrl == '/news') {
+        document.getElementById("title").innerHTML = 'Quản lý tin tức';
     }
-    if(parseUrl == '/login') {
+    
+    if (parseUrl == '/login') {
         $('#body-content').innerHTML = await screen.render();
         await screen.afterRender();
     } else {

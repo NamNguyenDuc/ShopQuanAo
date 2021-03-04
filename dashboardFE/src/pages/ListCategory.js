@@ -5,7 +5,8 @@ const ListCategory = {
     async render() {
         const { data: categories } = await CategoryAPI.getAll();
 
-        return `
+        return  /*html*/`
+        <h1 style= "text-align: center; color: red;"> Danh Sách Danh Mục </h1>
             <div id="categories">
                 <div class="row">
                     <div class="col-10">
@@ -24,7 +25,7 @@ const ListCategory = {
                     </thead>
                     <tbody>
                         ${categories.map(category => {
-                            return `
+            return `
                                 <tr>
                                     <td>${category.id}</td>
                                     <td><p>${category.name}</p></td>
@@ -34,7 +35,7 @@ const ListCategory = {
                                     </td>
                                 </tr>
                             `
-                        }).join(' ')}
+        }).join(' ')}
                     </tbody>
                 </table>
             </div>
@@ -45,9 +46,9 @@ const ListCategory = {
         const btns = $('#categories .remove-product');
         btns.forEach(btn => {
             const id = btn.dataset.id;
-            btn.addEventListener('click', function() {
+            btn.addEventListener('click', function () {
                 const question = confirm('Bạn có chắc chắn muốn xóa không?')
-                if(question) {
+                if (question) {
                     CategoryAPI.remove(id);
                     location.reload();
                 }
