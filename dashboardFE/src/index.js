@@ -1,6 +1,5 @@
 import Error404Page from './pages/Error404Page.js';
 import ProductsPage from './pages/ProductsPage.js';
-import ProductDetailPage from './pages/ProductDetailPage.js';
 import { parseRequestUrl, $ } from './utils.js';
 import ProductAddPage from './pages/ProductAddPage.js';
 import ProductEditPage from './pages/ProductEditPage.js';
@@ -14,7 +13,6 @@ import NewAddPage from './pages/NewAddPage.js';
 
 const routes = {
     '/': ListCategory,
-    '/products/:id': ProductDetailPage,
     '/products': ProductsPage,
     '/addproduct': ProductAddPage,
     '/editproduct/:id': ProductEditPage,
@@ -41,7 +39,7 @@ const router = async () => {
     } else if (parseUrl == '/news') {
         document.getElementById("title").innerHTML = 'Quản lý tin tức';
     }
-    
+
     if (parseUrl == '/login') {
         $('#body-content').innerHTML = await screen.render();
         await screen.afterRender();

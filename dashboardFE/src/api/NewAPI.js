@@ -9,14 +9,14 @@ const NewAPI = {
         const url = `/news/${id}`;
         return axiosClient.get(url);
     },
-    add(news) {
+    add(neww) {
         const url = `/news`;
-        return axiosClient.post(url, news);
+        return axiosClient.post(url, neww);
     },
 
-    update(id, newabc) {
+    update(id, neww) {
         const url = `/news/${id}`;
-        return axiosClient.put(url, newabc);
+        return axiosClient.put(url, neww);
     },
 
     remove(id) {
