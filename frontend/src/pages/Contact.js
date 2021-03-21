@@ -22,7 +22,7 @@ const Contact = {
                     <span id="validate-phone" class="text-error">Số điện thoại không được để trống</span>
                 </div>
                 <div class="col-12 mb-3">
-                    <label for="ghichu">Ghi chú </label>
+                    <label for="ghichu">Nội Dung </label>
                     <textarea name="" id="contact-note" cols="30" rows="5" placeholder="Ghi chú"
                         class="form-control"></textarea>
                 </div>

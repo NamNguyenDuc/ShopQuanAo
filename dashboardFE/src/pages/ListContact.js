@@ -15,7 +15,7 @@ const ListContact = {
                             <th scope="col">Tên khách hàng</th>
                             <th scope="col">Email</th>
                             <th scope="col">Số điện thoại</th>
-                            <th scope="col">Ghi chú</th>
+                            <th scope="col">Nội dung</th>
                             <th scope="col">Action</th>
                         </tr>
                     </thead>

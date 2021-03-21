@@ -20,6 +20,10 @@ const ProductEditPage = {
                             <span id="validate-name" class="text-error">Tên sản phẩm không được để trống</span>
                         </div>
                         <div class="col-12 mb-3">
+                            <label for="price">Ảnh </label>
+                            <div class="col-4"> <img src="${product.image}" style="width:300px; height: 420px;"  alt=""> </div>
+                        </div>
+                        <div class="col-12 mb-3">
                             <label for="price">Giá sản phẩm <b class="text-danger">*</b></label>
                             <input type="text" placeholder="Nhập giá sản phẩm" id="product-price" class="form-control" value="${product.price}" />
                             <span id="validate-price" class="text-error">Giá sản phẩm không được để trống</span>
@@ -40,7 +44,7 @@ const ProductEditPage = {
                             <span id="validate-quantity" class="text-error">Số lượng sản phẩm không được để trống</span>
                         </div>
                         <div class="col-12">
-                            <input type="submit" class="btn btn-primary w-100" value="Cập nhật sản phẩm" />
+                            <input type="submit" class="btn btn-primary w-100" value="Xác Nhận" />
                         </div>
                     </div>
                 </div>

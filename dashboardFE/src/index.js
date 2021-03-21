@@ -10,6 +10,7 @@ import Login from './pages/Login.js';
 import ListContact from './pages/listContact.js';
 import ListNewPage from './pages/NewListPage.js';
 import NewAddPage from './pages/NewAddPage.js';
+import NewUpdatePage from './pages/NewUpdatePage.js';
 
 const routes = {
     '/': ListCategory,
@@ -22,6 +23,7 @@ const routes = {
     '/contacts': ListContact,
     '/news': ListNewPage,
     '/addnews': NewAddPage,
+    '/updatenews/:id': NewUpdatePage,
 }
 
 const router = async () => {

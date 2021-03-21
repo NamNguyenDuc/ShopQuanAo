@@ -35,7 +35,7 @@ const ListNew = {
                                     <td><p>${listnew.description}</p></td>
                                     <td><p>${listnew.name}</p></td>
                                     <td>
-                                        <a href="" class="btn btn-primary">Update</a>
+                                        <a href="/#/updatenews/${listnew.id}" class="btn btn-primary">Update</a>
                                         <button class="btn btn-danger btn-remove remove-news" data-id="${listnew.id}">Remove</button>
                                     </td>
                                 </tr>

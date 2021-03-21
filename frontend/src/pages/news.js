@@ -12,7 +12,7 @@ const News = {
                         <div class="box-news">
                             <div class="image-new">
                                 <a href="#/newdetail/${item.id}"><img src="${item.image}" width="264px"
-                                        height="140px" alt=""> </a>
+                                        height="200px" alt=""> </a>
                             </div>
                             <div class="vietbai-new">
                                 <span> ${item.name}</span>

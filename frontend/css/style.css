@@ -16,7 +16,7 @@
 .box-news{
     display: block;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .image-new{
     opacity: 1;
@@ -25,6 +25,9 @@
 .image-new:hover {
   opacity: 0.9 ;
 }
+.title-new{
+    margin-top: -10px;
+}
 .title-new a{
     text-decoration: none;
     color: #252a2b;
@@ -32,18 +35,22 @@
 }
 .title-new a:hover{
     color: #008B8B;
+    text-decoration: none;
 }
 .detail-new p{
     height: 88px;
     line-height: 1.4;
     font-size: 14px;
     color: #252a2b;
-    margin-top: -10px;
+    margin-top: -5px;
 }
 .box-news:hover{
     opacity: 0.9;
 }
 .vietbai-new span{
-    font-size: small;
+    font-size: 11px;
     font-style: italic;
+}
+.vietbai-new{
+    margin-top: 5px;
 }
